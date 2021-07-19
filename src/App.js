@@ -37,12 +37,10 @@ export default function App(){
     <div>
       <h1> Завдання </h1> 
       <div>
-          <textarea rows="5" cols="20" onChange = {handleChange} value={title}  label ='title'/><br/>
-          <button class = 'but' onClick = {appendData}> Додати </button><br/><hr/>
-        </div>
-        <div>
-          {taskList ? taskList.map((task, index) => <Task task={task} key={index} />) : ''}
-        </div>
+        <textarea rows="5" cols="20" onChange = {handleChange} value={title}  label ='title'/><br/>
+        <button class = 'but' onClick = {appendData}> Додати </button><br/><hr/>
+        {taskList ? taskList.map((task, index) => <Task task={task} key={index} />) : ''}
+      </div>
     </div>
   )
 }
