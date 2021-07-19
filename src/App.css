@@ -31,20 +31,20 @@
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
-  }
+  } 
   to {
     transform: rotate(360deg);
   }
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #bda2a2;
   color: rgb(0, 0, 0);
   padding: 40px;
-  font-family: Arial;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
-.button {
+.but {
   background-color: #2a2388; /* Green */
   border: none;
   color: white;
@@ -52,5 +52,11 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+:checked {
+  width: 17px;
+  height: 17px;
 }
